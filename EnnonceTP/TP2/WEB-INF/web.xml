@@ -1,0 +1,34 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE web-app PUBLIC '-//Sun Microsystems, Inc.//DTD Web       Application 2.3//EN' 'http://java.sun.com/dtd/web-app_2_3.dtd'>
+<web-app>
+	<servlet>
+		<servlet-name>PremierServlet</servlet-name>      
+		<servlet-class>tm.PremierServlet</servlet-class>
+	</servlet>
+	<servlet>
+		<servlet-name>SecondServlet</servlet-name>      
+		<servlet-class>tm.SecondServlet</servlet-class>
+		<init-param>
+			<param-name>name</param-name>
+			<param-value>Lucien</param-value>
+		</init-param>
+	</servlet>
+	<servlet>
+		<servlet-name>TroisiemeServlet</servlet-name>      
+		<servlet-class>tm.TroisiemeServlet</servlet-class>
+	</servlet>
+
+	
+	<servlet-mapping>
+		<servlet-name>PremierServlet</servlet-name>
+		<url-pattern>/premier</url-pattern>  
+	</servlet-mapping>
+	<servlet-mapping>
+		<servlet-name>SecondServlet</servlet-name>
+		<url-pattern>/second</url-pattern>  
+	</servlet-mapping> 
+	<servlet-mapping>
+		<servlet-name>TroisiemeServlet</servlet-name>
+		<url-pattern>/troisieme</url-pattern>  
+	</servlet-mapping>
+</web-app>

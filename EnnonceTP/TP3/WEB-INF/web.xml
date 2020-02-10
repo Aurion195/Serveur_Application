@@ -1,0 +1,45 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE web-app PUBLIC '-//Sun Microsystems, Inc.//DTD Web       Application 2.3//EN' 'http://java.sun.com/dtd/web-app_2_3.dtd'>
+<web-app>
+	<servlet>
+		<servlet-name>Connexion</servlet-name>      
+		<servlet-class>tm.Connexion</servlet-class>
+	</servlet>
+	<servlet>
+		<servlet-name>Details</servlet-name>      
+		<servlet-class>tm.Details</servlet-class>
+	</servlet>
+	<servlet>
+		<servlet-name>Affichage</servlet-name>      
+		<servlet-class>tm.Affichage</servlet-class>
+	</servlet>
+	<servlet>
+		<servlet-name>Page1</servlet-name>      
+		<servlet-class>tm.Page1</servlet-class>
+	</servlet>
+	<servlet>
+		<servlet-name>Page2</servlet-name>      
+		<servlet-class>tm.Page2</servlet-class>
+	</servlet>
+	
+	<servlet-mapping>
+		<servlet-name>Connexion</servlet-name>
+		<url-pattern>/connexion</url-pattern>  
+	</servlet-mapping>
+	<servlet-mapping>
+		<servlet-name>Details</servlet-name>
+		<url-pattern>/details</url-pattern>  
+	</servlet-mapping> 
+	<servlet-mapping>
+		<servlet-name>Affichage</servlet-name>
+		<url-pattern>/affichage</url-pattern>  
+	</servlet-mapping>
+	<servlet-mapping>
+		<servlet-name>Page1</servlet-name>
+		<url-pattern>/page1</url-pattern>  
+	</servlet-mapping>
+	<servlet-mapping>
+		<servlet-name>Page2</servlet-name>
+		<url-pattern>/page2</url-pattern>  
+	</servlet-mapping>
+</web-app>
