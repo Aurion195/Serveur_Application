@@ -37,8 +37,13 @@ public class ClientJNDI {
 		try {
 			InitialContext ctx = new InitialContext();
 			IGestionLivre beanTest = (IGestionLivre)ctx.lookup("tm.IGestionLivre");
-			beanTest.ajouterLivre("648", "Le Java") ;
-			System.out.println("Le livre a été ajouté");
+			//beanTest.ajouterLivre("648", "Le Java") ;
+			//beanTest.ajouterLivre("649", "Le c++") ;
+			//System.out.println("Le livre a été ajouté");
+			//beanTest.supprimerLivre("648") ;
+			//System.out.println("Le livre a été supprimé");
+			beanTest.emprunterLivre("649");
+			beanTest.rendreLivre("649");
 		}
 		catch(Exception e) {
 			System.out.println(e.getMessage()) ;
